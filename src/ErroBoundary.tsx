@@ -20,11 +20,10 @@ export default class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-
+    //some logger here
   }
 
   render() {
-    console.log('boundary state', this.state)
     if (this.state.hasError) {
       return (
         <Center color="tomato">
